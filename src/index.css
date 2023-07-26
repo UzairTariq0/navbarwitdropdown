@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.megamenu {
+    position: absolute;
+    height: 400px;
+    left: 0;
+    top: 76px;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 1;
+  
+  }
+  
+  .megamenuitems {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .megamenuitems ul li {
+    list-style: none;
+    padding: 8px;
+    font-weight: 400;
+    font-size: 17px;
+    color: white;
+    line-height: 21px;
+    position: relative;
+    top: 10px;
+  }
+  
+  .megamenuitems ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .mega-items h3 {
+    font-weight: 700;
+    line-height: 21px;
+    color: rgb(248, 105, 3);
+    position: relative;
+    left: 7.8px;
+    margin-top: 38px;
+    font-size: 20px;
+    text-transform: uppercase;
+  
+  }
+  
+  .list-items:hover .megamenu {
+    opacity: 1;
+    visibility: visible;
+  }
+  
